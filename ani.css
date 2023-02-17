@@ -57,3 +57,29 @@ h4:hover {
     border-radius: 5px;
     -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(128, 128, 128, 0),rgba(128, 128, 128, 0.341) );
 }
+.box4 {
+    background: url(workers.jpg) center no-repeat;
+    width: 200px;
+    height: 200px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+    -webkit-box-reflect: below 5px linear-gradient(to top, rgba(128, 128, 128, 0.077), rgba(128, 128, 128, 0.038));
+
+}
+.box5 {
+    background: url(workers.jpg) center no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: ;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    -webkit-box-reflect: right 2px;
+}
+.box6 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid grey;
+    clear: both;
+    display: table;
+    object-fit: cover;
+}
