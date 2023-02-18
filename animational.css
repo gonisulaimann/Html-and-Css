@@ -65,14 +65,25 @@ img.a img:hover {
 .one, img {
     background: url(workers.jpg) no-repeat;
     background-size: contain;
-    width: 300px;
-    height: 200px;
+    max-width: 100%;
+    height: 500px;
     margin-bottom: 200px;
     display: inline-block;
     margin-left: 20px;
 }
-
-.two {
-    -webkit-mask-image: url(madaboki.png);
-    mask-border: 2px solid coral;
+p {
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+  }
+div.two {
+    background: url(workers.jpg) no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 300px;
+    margin-left: 200px;
+    overflow: scroll;
+}
+.mask2 {
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 0);
 }
