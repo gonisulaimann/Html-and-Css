@@ -1,10 +1,12 @@
 body {
     background: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container {
     width: 100%;
     color: white;
     position: relative;
+    
 }
 .container img {
     width: 100%;
@@ -25,31 +27,116 @@ body {
     background: black;
 }
 .butt {
-    margin-top: 20px;
-    margin-left: 50%;
-    transform: translate(-50%);
-    background: coral;
+    background: green;
     display: inline-block;
-    color: white;
-    padding: 15px 30px;
+    padding: 15px 25px;
     font-size: 25px;
-    cursor: pointer;
+    margin-top: 20px;
+    color: white;
     transition: all 0.5s;
+    font-family: inherit;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
 
 }
 span {
-    position: relative;
     cursor: pointer;
-    transform: 0.5s;
+    transition: 0.5s;
+    padding-left: 0;
+    padding-left: 10px;
 }
 span:after {
-    content: "\00bb";
-    transition: 0.5s;
-    position: absolute;
-    top: 0;
-    right: -20px;
+    content: '\00bb';
     opacity: 0;
+    transition: 0.5s;
 }
 .butt:hover span {
-    padding-right: 20px;
+    opacity: 1;
+    
+}
+.butt:hover span:after {
+    padding-left: 10px;
+    opacity: 1;
+}
+
+.image {
+    background: url(workers.jpg) center no-repeat;
+    background-size: 100% inherit;
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin-top: 30px;
+    position: relative;
+    transition: all 0.5s;
+}
+.hover {
+    background: green;
+    color: white;
+    padding: 25px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: 0.5s;
+    border-radius: 20px;
+    font-size: 25px;
+}
+.hover:after {
+    content: '\00bb';
+    opacity: 0;
+    transition: 0.5s;
+}
+.butto:hover .hover:after {
+    opacity: 1;
+    padding-left: 5px;
+}
+.pagination {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.pagination a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+.pagination a:hover {
+    text-decoration: none;
+    transition: all 0.5s, transform 0.5s, background 0.5s;
+}
+.active {
+    background: green;
+    color: white;
+    border-radius: 20px;
+}
+.pagination a:hover:not(.active) {
+    background: rgba(172, 169, 169, 0.659);
+    border-radius: 20px;
+    transform: translate(auto);
+}
+
+/*page*/
+.page {
+    display: inline-block;
+}
+.page a {
+    border: 1px solid grey;
+    float: left;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.page a.active {
+    color: white;
+}
+.page a.hover:not(.active) {
+    background: #ddd;
+}
+.page:first-child {
+    border-radius: 20px;
+}
+.page:last-child {
+    border-radius: 20px;
 }
