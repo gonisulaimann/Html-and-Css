@@ -1,0 +1,63 @@
+body {
+    background: aliceblue;
+    font-family: arial;
+}
+
+div.image1, .image2, .image3, .image4, .image5 {
+    display: inline-block;
+    background: url(workers.jpg);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition: opacity 1s;
+    opacity: 1;
+}
+div.image1:hover:hover, div.image2:hover:hover, div.image3:hover:hover, div.image4:hover:hover, div.image5:hover:hover {
+    opacity: 0.6;
+
+}
+
+
+
+
+.pagination {
+    display: inline-block;
+    
+}
+.pagination a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid grey;
+    float: left;
+    padding: 8px 16px;
+}
+a.active {
+    background: green;
+    color: white;
+}
+.pagination a:hover:not(.active) {
+    background: #ddd;
+    transition: 0.5s;
+}
+.center {
+    text-align: center;
+}
+
+.breadcrumb {
+    display: block;
+    background: rgb(201, 199, 199);
+    margin-top: 30px;
+}
+.breadcrumb li {
+    display: inline-block;
+    padding: 15px 10px;
+}
+.breadcrumb li a {
+    padding: 15px 10px;
+    color: black;
+    text-decoration: none;
+}
+.breadcrumb l.active {
+    color: green;
+}
