@@ -1,0 +1,36 @@
+:root {
+    --orange: orange;
+    --black: black;
+    --blue: blue;
+    --white: white;
+    --gradient: linear-gradient(360deg, green, orange) no-repeat;
+
+}
+body {
+    background: var(--orange);
+    font-family: arial;
+}
+div.box {
+    background: var(--black);
+    color: var(--white);
+    padding: 20px 30px;
+    display: inline-block;
+}
+button {
+    border: 2px solid var(--white);
+    background: none;
+    color: var(--white);
+    transition: all 0.5s;
+}
+button:hover {
+    background: var(--white);
+    color: var(--black);
+}
+h2 {
+    --red: red;
+    border-bottom: 2px solid var(--red);
+}
+p {
+    --green: green;
+    color: var(--green)
+}
