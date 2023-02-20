@@ -1,0 +1,100 @@
+:root {
+    --blue: blue;
+    --red: red;
+    --orange: orange;
+    --black: black;
+    --white: white;
+    --font: 16px;
+    --alice: aliceblue;
+    --family: arial;
+    --grey: grey;
+    --green: green;
+}
+body {
+    background: var(--alice);
+    font-family: var(--family);
+    margin: 0;
+}
+.box {
+    background: var(--alice);
+    box-shadow: 0px 3px 5px 5px rgba(212, 210, 210, 0.527);
+    border-left: 20px solid green;
+    padding: 20px 20px;
+    width: 600px;
+    font-size: var(--font);
+}
+@media screen and (min-width: 300px) {
+    .box {
+        --font: 50px;
+    }
+}
+@media screen and (min-width: 300px) {
+    .box {
+        --font: 16px;
+    }
+    :root {
+        --coral: coral;
+    }
+}
+
+/*creating a vertical navar*/
+.nav {
+    position: relative;
+    text-transform: capitalize;
+}
+div.vertical {
+    transition: background 0.5s;
+}
+div.vertical ul.vert {
+    display: inline-block;
+    background: var(--grey);
+    list-style: none;
+    width: 30%;
+}
+div.vertical li {
+    padding: 10px;
+    
+}
+div.vertical li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.5s;
+}
+div.vertical li a.active {
+    background: var(--green) 
+}
+div.vertical li a:hover:not(.active) {
+    --ash: rgba(227, 227, 227, 0.511);
+    background: var(--ash)
+}
+
+/*creating a vertical navar*/
+.horizontal {
+    display: inline-block;
+    background: var(--grey); 
+    width: 70%;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+div.horizontal ul.hori {
+    width: 50%;
+}
+div.horizontal li {
+    padding: 10px 5px;
+    display: inline-block;
+}
+div.horizontal li a {
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    
+}
+div.horizontal li a.active {
+    background: var(--green);
+}
+div.horizontal li a:hover:not(.active) {
+    background: var(--ash);
+}
