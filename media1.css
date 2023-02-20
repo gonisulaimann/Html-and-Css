@@ -1,0 +1,96 @@
+:root {
+    --blue: blue;
+    --red: red;
+    --orange: orange;
+    --black: black;
+    --white: white;
+    --shadow: 0px 0px 3px 3px rgb(232, 224, 224);
+    --alice: aliceblue;
+    --family: arial;
+    --font: 16px;
+}
+body {
+    font-family: var(--family);
+    background: var(--alice);
+}
+@media screen and (max-width: 2000px) {
+    body {
+        background: blue;
+    }
+}
+@media screen and (max-width: 1000px) {
+    body {
+        background: coral;
+    }
+}
+.box {
+    background: var(--alice);
+    box-shadow: var(--shadow);
+    padding: 15px 20px;
+    width: 500px;
+    border-left: 20px solid green;
+    font-size: var(--font);
+}
+@media screen and (min-width: 500px) {
+    .box {
+        --font: 16px;
+    }
+}
+
+.menu {
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    text-transform: capitalize;
+
+}
+.menulist li {
+    list-style-type: none;
+    display: block;
+    border: 2px solid green;
+    padding: 20px 100px;
+    margin-top: 10px;
+    width: 20%;
+    transition: background 0.5s ease-out, transform 0.5s ease-in, opacity 0.5s ease;
+}
+.menulist li:after {
+    content: '\00bb';
+    padding-left: 20px;
+    opacity: 0;
+}
+.menulist li:hover {
+    background: green;
+    color: white;
+    transform: translatey(-200px) translateX(200px);
+}
+li:hover li:after {
+    transform: translate(20px);
+    opacity: 1;
+}
+li:hover li:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (min-width: 500px) {
+    .menu {
+        display: block;
+    }
+}
+
+
+
+.menu_content {
+    display: inline-block;
+    position: relative;
+}
+.menu_content p {
+    border: 2px solid green;
+    padding: 20px;
+}
+@media screen and (man-width: 500px) {
+    .menu-content  {
+        width: 500px;
+        float: right;
+    }
+}
