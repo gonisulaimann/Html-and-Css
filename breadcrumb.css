@@ -1,0 +1,39 @@
+body {
+    background: aliceblue;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.breadcrumb {
+    display: block;
+    background: #ddd;
+    margin-top: 40px;
+}
+.breadcrumb li {
+    display: inline-block;
+    padding: 20px 5px;
+}
+.breadcrumb li a {
+    padding: 2px 2px;
+    color: black;
+    text-decoration: none;
+}
+.breadcrumb a.active {
+    color: green;
+}
+.breadcrumb li+li:before {
+    content: "/\00a0";
+    padding: 2px;
+}
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+/*resizing using the resize button*/
+
+div.resize {
+    border: 1px solid black;
+    width: 50%;
+    resize: both;
+    overflow: auto;
+    transition: resize 1s;
+}
