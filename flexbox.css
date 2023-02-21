@@ -1,0 +1,54 @@
+:root {
+    --blue: blue;
+    --alice: aliceblue;
+    --awhite: #f1f1f1;
+    --dodge: dodgerblue;
+}
+body {
+    background: var(--alice);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    background: var(--dodge);
+    padding: 20px;
+    display: flex;
+    transition: background 0.5s ease;
+    overflow: hidden;
+
+}
+.container > div {
+    background: var(--awhite);
+    padding: 20px;
+    line-height: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+/*another flex*/
+
+.flex {
+    background: var(--dodge);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.flex > div {
+    background: var(--awhite);
+    padding: 20px;
+    margin: 10px;
+    width: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 2px 0px rgb(13, 13, 13);
+    transition: background 0.5s cubic-bezier(0.20, 1, 20, 0.29);
+}
+.flex > div:hover {
+    --new: rgb(227, 226, 226);
+    background: var(--new);
+}
+@media screen and (min-width: 3000px) and (max-width: 1000px) {
+    .flex > div {
+        visibility: hidden;
+    }
+}
