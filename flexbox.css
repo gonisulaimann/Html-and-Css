@@ -27,6 +27,10 @@ body {
 }
 /*another flex*/
 
+div.flex > .justify {
+    justify-content: first baseline;
+}
+
 .flex {
     background: var(--dodge);
     margin-top: 20px;
@@ -51,4 +55,12 @@ body {
     .flex > div {
         visibility: hidden;
     }
+}
+div.images {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 30px;
+}
+div.images > .column {
+    margin: 10px;
 }
