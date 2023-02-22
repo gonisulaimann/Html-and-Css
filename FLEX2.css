@@ -1,0 +1,90 @@
+:root {
+    --alice: aliceblue;
+    --orange: orange;
+    --dodge: dodgerblue;
+    --awhite: rgb(229, 229, 229);
+}
+body {
+    background: var(--alice);
+    --font: arial;
+    font-family: var(--font);
+}
+div.box {
+    background: var(--dodge);
+    display: flex;
+    padding: 20px;
+}
+div.box > div {
+    padding: 22px;
+    background: var(--awhite);
+    margin: 2px;
+    line-height: 100px;
+    transition: background 0.5s cubic-bezier(0.455, 0.03, 0.515, 1);
+}
+div.box > div:hover {
+    --grey: rgb(137, 137, 137);
+    background: var(--grey);
+    --white: white;
+    color: var(--white);
+}
+@media screen and (min-width: 200px) and (max-width: 500px) {
+    div.box {
+        flex-flow: column nowrap;
+    }
+}
+
+
+/*another div example*/
+
+div.images {
+    display: flex;
+    margin-top: 30px;
+    flex-flow: row nowrap;
+}
+div.images > .column, img {
+    margin-left: 10px;
+    transition: opacity 0.5s cubic-bezier(1, 0.05, 1, 0);
+}
+div.images > .column img:hover {
+    opacity: 0.6;
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    div.images > .column {
+        display: flex wrap;
+        flex-flow: column;
+       
+    }
+}
+
+/*working with text "just" */
+
+div.just {
+    display: flex; 
+    background: orange;
+    margin-top: 20px;
+    margin: 20px;
+    justify-content: first baseline;
+    font-family: var(--font);
+}
+div.just > .content {
+    padding: 20px;
+    color: var(--white);
+    background: var(--white);
+}
+
+/*working with flex positioning*/
+
+div.color {
+    background: var(--orange);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content:;
+}
+div.color > .colored {
+    --white: white;
+    background: var(--white);
+    width: 50px;
+    height: 50px;
+    border: 3px dotted black
+}

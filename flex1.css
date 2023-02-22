@@ -10,10 +10,10 @@ body {
 .image-flex > .column {
     margin: 10px;
 }
-div.text {
-    display: flex;
-    margin: 10px;
-    flex-flow: row nowrap;
+
+.text {
     background: orange;
-    justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    
 }
