@@ -140,3 +140,27 @@ div.centered > div {
     width: 70px;
     height: 70px;
 }
+
+
+div.center {
+    background: var(--dodge);
+    margin-top: 20px;
+    display: flex;
+    flex-flow: wrap;
+    height: 150px;
+    overflow: scroll;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+div.center > div {
+   background: var(--white);
+   margin: 10px;
+   line-height: 100px;
+   width: 100px;
+   text-align: center;
+   order: 5;
+   transition: flex-grow 1s ease-in-out
+}
+div.center  div.grow:hover {
+    flex-grow: 1;
+}
