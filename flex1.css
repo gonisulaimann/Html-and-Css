@@ -1,0 +1,19 @@
+body {
+    background: aliceblue;
+}
+
+.image-flex {
+    display: flex;
+    margin: 10px;
+    flex-flow: row nowrap;
+}
+.image-flex > .column {
+    margin: 10px;
+}
+div.text {
+    display: flex;
+    margin: 10px;
+    flex-flow: row nowrap;
+    background: orange;
+    justify-content: center;
+}
