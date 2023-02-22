@@ -1,0 +1,142 @@
+:root {
+    --white: white;
+    --blue: blue;
+    --orange: orange;
+    --dodge: dodgerblue;
+    --grey: grey;
+    --font: 1em;
+    --family: arial;
+    --alice: aliceblue;
+}
+body {
+    background: var(--alice);
+    font-family: var(--family);
+}
+
+div.flexed {
+    display: flex;
+    flex-flow: row wrap;
+}
+div.box1 {
+    background: var(--dodge);
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.box1 > div {
+    background: var(--white);
+    width: 50px;
+    line-height: 50px;
+    border: 2px inset grey;
+    text-align: center;
+    --font: 2em;
+    font-size: var(--font);
+
+}
+
+div.wrapped {
+    background: var(--dodge);
+    display: flex;
+    width: 400px;
+    height: 500px;
+    margin-left: 20px;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 5px 2px rgb(63, 63, 63);
+    position: relative;
+}
+div.wrapped > div::selection {
+    background: var(--dodge);
+}
+div.wrapped > div {
+    background: var(--white);
+    margin: 10px;
+    line-height: 50px;
+    width: 50px;
+    text-align: center;
+    border: 1px inset grey;
+}
+div.wrapped > div.space {
+    width: 100px;
+    transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+div.wrapped > div:hover {
+    box-shadow: 0px 2px 1px 1px rgb(105, 103, 103);
+}
+div.wrapped > div.space:hover {
+    flex-grow: 3;
+}
+div.box2 {
+    background: var(--dodge);
+    display: flex;
+    width: 400px;
+    height: 300px;
+    flex-wrap: wrap;
+    color: var(--white);
+    margin-top: 20px;
+
+}
+div.box2 > div.rotate {
+    width: 30px;
+    height: 30px;
+    background: aqua;
+    margin: 40px;
+    animation: animation 2s ease infinite;
+    position: relative;
+}
+@keyframes animation {
+    0% {
+        --aqua: aqua;
+        background: var(--aqua);
+        top: 0;
+        left: 0;
+    }
+    25% {
+        background: var(--orange);
+        top: 0;
+        left: 290px;
+    }
+    50% {
+        --red: red;
+        background: var(--red);
+        left: 290px;
+        top: 210px;
+    }
+    75% {
+        --green: green;
+        background: var(--green);
+        left: 0;
+        top: 210px;
+    }
+    100% {
+        background: var(--aqua);
+        left: 0;
+        top: 0;
+    }
+}
+
+div.flex {
+    background: var(--orange);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 300px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+div.flex > div{
+    background: var(--white);
+    width: 50px;
+    height: 20px;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+div.flex > .two {
+    flex-grow: ;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
