@@ -1,0 +1,67 @@
+:root {
+    --white: white;
+    --blue: blue;
+    --orange: orange;
+    --dodge: dodgerblue;
+    --grey: grey;
+    --font: 1em;
+    --family: arial;
+    --alice: aliceblue;
+}
+body {
+    background: var(--alice);
+    font-family: var(--family);
+}
+
+
+div.alignment {
+    background: var(--dodge);
+    display: flex;
+    height: 500px;
+    margin: 20px;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: center;
+    overflow: scroll;
+}
+div.alignment > div {
+    background: var(--white);
+    margin: 20px;
+    line-height: 50px;
+    width: 70px;
+    text-align: center;
+    transition: all 0.5s;
+}
+div.alignment > div.one:hover {
+    background: var(--white);
+    flex-grow: 0;
+}
+
+div.nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 20px;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    background: url(other_houses_white_24dp.svg) left no-repeat var(--dodge);
+    background-position: 15px 12px;
+
+
+} 
+div.nav > ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 17px;
+}
+
+div.nav > ul li a:hover {
+    background: var(--orange);
+}
+@media only screen and (min-width: 300px) {
+    div.nav > ul li a {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
