@@ -135,8 +135,32 @@ div.flex > div{
     margin-left: 20px;
     margin-top: 20px;
 }
+div.flex > .three {
+    align-self: last baseline;
+}
 div.flex > .two {
-    flex-grow: ;
+    align-self: center;
+}
+div.flexshrink {
+    display: flex;
+    background: var(--orange);
+    height: 200px;
+    width: 500px;
+    margin-top: 20px;
+   
+}
+div.flexshrink > div {
+    background: var(--white);
+    margin: 5px;
+    line-height: 20px;
+    padding: 10px;
+}
+div.flexshrink > .basis {
+    flex-basis: 100px; 
+}
+div.flexshrink > .shrink {
     flex-shrink: 0;
-    flex-basis: 200px;
+}
+div.flexshrink > .alignself {
+    align-self: center;
 }
