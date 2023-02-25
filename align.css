@@ -157,6 +157,7 @@ div.items > .item2, .item4 {
 
 div.itemlist {
     display: flex;
+    flex-flow: row wrap;
     text-align: center;
     margin-top: 20px;
     text-transform: capitalize;
@@ -179,4 +180,9 @@ div.itemlist > .tem2, .tem4 {
 }
 div.itemlist > .tem1:hover, .tem2:hover, .tem3:hover, .tem4:hover {
     opacity: 0.8;
+}
+@media only screen and (min-width: 790px) {
+    div.itemlist {
+        flex-flow: column;
+    }
 }
