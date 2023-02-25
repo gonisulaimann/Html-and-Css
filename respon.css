@@ -1,0 +1,14 @@
+:root {
+    --white: white;
+    --blue: blue;
+    --orange: orange;
+    --dodge: dodgerblue;
+    --grey: grey;
+    --font: 1em;
+    --family: arial;
+    --alice: aliceblue;
+}
+
+* {
+    box-sizing: border-box;
+}
