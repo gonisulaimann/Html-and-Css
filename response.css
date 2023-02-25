@@ -59,3 +59,23 @@ body {
       max-width: 100%;
     }
   }
+
+  /*another gallery*/
+
+div.gallery {
+    margin-top: 20px;
+    display: flex;
+}
+.ro {
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 10px;
+}
+.col img {
+    vertical-align: middle;
+    margin-top: 10px;
+}
