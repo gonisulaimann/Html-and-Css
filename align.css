@@ -1,0 +1,182 @@
+:root {
+    --white: white;
+    --blue: blue;
+    --orange: orange;
+    --dodge: dodgerblue;
+    --grey: grey;
+    --font: 1em;
+    --family: arial;
+    --alice: aliceblue;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: var(--alice);
+    font-family: var(--family);
+}
+div.box {
+    background: var(--dodge);
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+div.box > div {
+    background: var(--white);
+    width: 50px;
+    margin: 10px;
+    line-height: 50px;
+    text-align: center;
+}
+div.test {
+    flex-basis: 200px;
+}
+div.test1 {
+    flex: 0 0 200px;
+}
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    div.box > div {
+        flex-flow: column nowrap;
+    }
+}
+div.container {
+    margin-top: 20px;
+    background: var(--dodge);
+    display: flex;
+    height: 200px;
+}
+div.container > div {
+    background: var(--white);
+    margin: 10px;
+    width: 50px;
+}
+div.container > div.center {
+    flex: 0 0 200px;
+    text-align: center;
+    align-self: center;
+    height: 50px;
+}
+div.container > div.center1 {
+    align-self: flex-end;
+}
+div.container > div.center2 {
+    align-self: flex-start;
+}
+div.container > div.center3 {
+    align-self: flex-end;
+}
+div.container > div.center4 {
+    align-self: center;
+}
+
+div.cont {
+    background: var(--dodge);
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column;
+    height: 700px;
+    overflow: scroll;
+}
+div.cont > div {
+    background: var(--white);
+    line-height: 50px;
+    margin: 10px;
+}
+div.cont > div.one {
+    align-self: flex-end;
+    flex: 0 0 200px;
+    padding: 50px;
+}
+div.cont > div.two {
+    align-self: flex-start;
+    flex: 0 0 200px;
+    padding: 50px;
+    margin-top: -310px;
+}
+div.cont > div.three {
+    align-self: center;
+    flex: 0 0 200px;
+    height: 50px;
+    padding: 200px;
+    margin-top: -310px;
+}
+div.aligncontent {
+    background: var(--dodge);
+    display: flex;
+    height: 300px;
+    flex-flow: row;
+    align-content: flex-start;
+}
+div.aligncontent > div {
+    border: 1px solid var(--white);
+    border-radius: 7px;
+    margin: px;
+    padding: 5px;
+    background: var(--orange);
+}
+div.justify {
+    background: var(--blue);
+    margin-top: 20px;
+    display: flex;
+    height: 700px;
+    flex-flow: wrap;
+    justify-content: space-between;
+    overflow: scroll;
+}
+div.justify > div {
+    background: var(--white);
+}
+div.items {
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    text-transform: capitalize;
+}
+div.items > .item1, .item3 {
+    --grey: rgb(213, 212, 212);
+    background: var(--grey);
+    flex: 25%;
+    padding: 15px;
+}
+div.items > .item2, .item4 {
+    --black: black;
+    background: var(--black);
+    flex: 25%;
+    color: var(--white);
+    padding: 15px;
+}
+@media only screen and (min-width: 800px) {
+    div.items {
+        flex-flow: column;
+    }
+}
+
+div.itemlist {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+    opacity: 1;
+    
+}
+div.itemlist > .tem1, .tem3{
+    --grey: rgb(206, 205, 205);
+    background: var(--grey);
+    padding: 15px;
+    flex: 25%;
+    transition: all 0.5s ease-in-out;
+}
+div.itemlist > .tem2, .tem4 {
+    background: var(--orange);
+    flex: 25%;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+    
+}
+div.itemlist > .tem1:hover, .tem2:hover, .tem3:hover, .tem4:hover {
+    opacity: 0.8;
+}
