@@ -7,22 +7,56 @@
     --font: 1em;
     --family: arial;
     --alice: aliceblue;
+    --red: red;
+    --coral: coral;
 }
-
+body {
+    background: var(--white);
+    margin: 0;
+}
+html {
+    font-family: var(--family);
+}
 * {
     box-sizing: border-box;
 }
-div.email {
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 50px;
+/*this is the col*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col"] {
+    float: left;
 }
-div.email li a {
-    color: black;
-    text-decoration: none;
+.header {
+    background: var(--coral);
+    padding: 16px;
 }
-@media screen and (min-width: 3000px) {
-     div.email li a:before {
-    content: "Email: "; 
-  }
+.menu ul {
+    padding: 0;
+    margin: 15px;
+    list-style-type: none;
+}
+.menu li {
+    background: var(--dodge);
+    margin-bottom: 10px;
+    padding: 8px;
+    box-shadow: 0px 3px 3px 0px rgb(167, 163, 163);
+}
+.menu li:hover {
+    --dodgee: rgb(6, 130, 255);
+    background: var(--dodgee);
+}
+.content {
+    background: var(--dodge);
+    padding: 9px;
 }
