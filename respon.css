@@ -60,3 +60,20 @@ html {
     background: var(--dodge);
     padding: 9px;
 }
+@media only screen and (min-width: 1000px) and (max-width: 2000px) {
+    .menu {
+        display: block;
+        float: right;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .content {
+        display: block;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background: aliceblue;
+    }
+}
