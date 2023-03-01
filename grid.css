@@ -42,3 +42,75 @@ html {
     background: var(--dodge);
     --dodge: rgb(0, 105, 210);
 }
+
+div.greed {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: var(--dodge);
+    margin-top: 20px;
+    padding: 50px;
+    text-transform: capitalize;
+    gap: 6px;
+
+}
+div.greed1 {
+    background: var(--dodge);
+    --dodge: rgb(173, 212, 251);
+    padding: 50px;
+    border: 2px solid var(--white);
+    --white: white;
+    text-align: center;
+    font-size: 2em;
+    transition: background 0.52s ease-in;
+    grid-column-start: 1;
+}
+div.greed1:hover {
+    background: var(--dodge);
+    --dodge: dodgerblue;
+}
+
+div.greed0 {
+    background: var(--orange);
+    --orange: orange;
+    margin-top: 20px;
+    padding: 70px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 5px;
+    transition: background 0.5s ease-in;
+    
+}
+div.greed2 {
+    background: var(--white);
+    --white: rgb(169, 149, 149);
+    padding: 10px;
+    text-align: center;
+    transition: background 0.2s ease-in;
+    
+}
+div.greed2:hover {
+    background: linear-gradient(20deg, var(--grey), var(--white));
+    --grey: rgb(221, 206, 206);
+    --white: rgb(156, 128, 128);
+}
+.item1 {grid-area: header; }
+.item2 {grid-area: menu; }
+.item3 {grid-area: main; }
+.item4 {grid-area: right; }
+.item5 {grid-area: footer; }
+
+
+.grid-con {
+    display: grid;
+    background: var(--dodge);
+    padding: 50px;
+    gap: 10px;
+    grid-template-areas: 'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+}
+.grid-con > div {
+    background: white;
+    padding: 20px 0;
+    text-align: center;
+}
