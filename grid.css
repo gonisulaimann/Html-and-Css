@@ -1,0 +1,44 @@
+:root {
+    --dodge: dodgerblue;
+}
+body {
+    background: var(--alice);
+}
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 10px;
+  }
+.grid-item {
+    padding: 20px;
+    --white: white;
+    border: 2px solid var(--white);
+    text-align: center;
+    font-size: 2em;
+    transition: background 0.2s ease;
+}
+.grid-item:hover {
+    background: var(--dodge);
+    --dodge: rgb(0, 105, 210);
+}
+.grid {
+    display: inline-grid;
+    background: var(--dodge);
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+}
+.grid1 {
+    background: var(--dodge);
+    --dodge: rgb(60, 135, 210);
+    padding: 10px;
+    --white: white;
+    border: 2px solid var(--white);
+    transition: background 0.52s ease-in;
+}
+.grid1:hover {
+    background: var(--dodge);
+    --dodge: rgb(0, 105, 210);
+}
