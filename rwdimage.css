@@ -1,0 +1,112 @@
+:root {
+    --alice: aliceblue;
+    --orange: orange;
+    --blue: blue;
+    --red: red;
+    --white: white;
+    --black: black;
+    --dodge: dodgerblue;
+    --family: lucida;
+}
+body {
+    background: var(--alice);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+* {box-sizing: border-box;
+}
+div.container {
+    display: flex;
+    width: 25%;
+}
+div.container img {
+    margin-left: 10px;
+}
+div.image {
+    width: 100%;
+    height: 400px;
+
+    background-image: url('workers.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid red;
+}
+@media only screen and (min-width: 800px) {
+    div.image {
+        background: url(elyana.jpg) center no-repeat;
+        background-size: contain;
+    }
+    div.box {
+        float: left;
+        animation: animate 2s ease-in;
+    }
+    @keyframes animate {
+        from {left: 0;}
+        to {left: 50%}
+    }
+    div.box1 {
+        width: 200px;
+        height: 200px;
+    }
+    div.box2 {
+        
+    }
+}
+div.box {
+    background: var(--dodge);
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    transition: all 0.5s ease-in transform 3s ease-in ;
+    position: relative;
+}
+div.box1 {
+    background: var(--dodge);
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+div.box2 {
+    background: var(--dodge);
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.box3, .box5 {
+    background: var(--dodge);
+    --dodge: green;
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+}
+.box4, .box6 {
+    background: var(--dodge);
+    --dodge: orange;
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 500px) {
+    [class*="box"] {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .box3 {
+        float: left;
+    }
+    .box4 {
+        float: right;
+    }
+    .box5 {
+        float: left;
+    }
+    .box6 {
+        float: right;
+    }
+    [class*="box-"] {
+        padding: 15px;
+        float: left;
+    }
+}
