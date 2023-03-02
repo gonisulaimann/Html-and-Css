@@ -114,3 +114,22 @@ div.greed2:hover {
     padding: 20px 0;
     text-align: center;
 }
+.grid-co {
+    background: var(--dodge);
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    padding: 50px;
+    grid-template-areas: 'header header header header header header'
+    'menu main main main right right'
+    'footer footer footer footer footer';
+}
+.item0 {grid-area: header;}
+.item11 {grid-area: menu;}
+.item12 {grid-area: main;}
+.item13 {grid-area: right;}
+.item15 {grid-area: footer;}
+
+.grid-co > div {
+    background: white;
+}
