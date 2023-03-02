@@ -1,6 +1,6 @@
 body {
     background: var(--alice);
-    --alice: rgb(216, 213, 213);
+    --alice: rgb(255, 255, 255);
 }
 :root {
     --dodge: dodgerblue;
@@ -19,4 +19,26 @@ body {
 }
 .height {
     
+}
+mark {
+    border-radius: 4px;
+    background: var(--grey);
+    --grey: wh
+    color: white;
+    margin: 5px;
+}
+abbr {
+    text-decoration: underline;
+    background-color: white;
+}
+.image {
+    border-radius: 100%;
+    float: left;
+    border: 2px solid grey;
+}
+.image:hover {
+    border-color: rgb(201, 189, 189);
+}
+pre {
+    color: red;
 }
