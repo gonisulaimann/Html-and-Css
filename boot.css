@@ -1,0 +1,22 @@
+body {
+    background: var(--alice);
+    --alice: rgb(216, 213, 213);
+}
+:root {
+    --dodge: dodgerblue;
+    --dodge: dodgerblue;
+}
+[class*="col"] {
+    background: orange;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.menu {
+    text-align: center;
+}
+.margin-left {
+    margin-left: 20px;
+}
+.height {
+    
+}
