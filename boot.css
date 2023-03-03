@@ -1,44 +1,27 @@
-body {
-    background: var(--alice);
+:root {
+    --grey: grey;
     --alice: rgb(255, 255, 255);
 }
-:root {
-    --dodge: dodgerblue;
-    --dodge: dodgerblue;
+body {
+    background: var(--neutral);
+    --neutral: rgb(255, 255, 255);
 }
-[class*="col"] {
-    background: orange;
-    margin-top: 10px;
-    margin-bottom: 20px;
+
+* {
+    box-sizing: border-box;
 }
-.menu {
-    text-align: center;
+.jumbotron {
+    background: var(--orange);
+    --orange: orange;
+    margin-top: 30px;
 }
-.margin-left {
-    margin-left: 20px;
+.page-header {
+    border: 3px solid orange;
 }
-.height {
-    
+.page-header:hover {
+    box-shadow: 0px 2px 2px 5px var(--orange);
+    --orange: orange;
 }
-mark {
-    border-radius: 4px;
-    background: var(--grey);
-    --grey: wh
-    color: white;
-    margin: 5px;
-}
-abbr {
-    text-decoration: underline;
-    background-color: white;
-}
-.image {
-    border-radius: 100%;
-    float: left;
-    border: 2px solid grey;
-}
-.image:hover {
-    border-color: rgb(201, 189, 189);
-}
-pre {
-    color: red;
+.well:hover {
+    box-shadow: 2px 1px 1px 3px var(--grey);
 }
